@@ -33,7 +33,7 @@
            <key>bundle-identifier</key>
            <string>com.azfy.SafetyTest</string>
            <key>bundle-version</key>
-           <string>1.0.0</string>//版本号
+           <string>1.0.0</string> 
            <key>kind</key>
            <string>software</string>
            <key>title</key>
