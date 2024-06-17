@@ -13,8 +13,6 @@
                <key>url</key>
                <string>https://imcheckapp.s3.ap-east-1.amazonaws.com/SafetyLine.ipa</string>
 <!--            <string>https://github.com/wangyunw/WYunTextDemo/blob/master/SafetyLine.ipa</string>-->
-               
-               
            </dict>
            <dict>
                <key>kind</key>
@@ -33,7 +31,7 @@
        <key>metadata</key>
        <dict>
            <key>bundle-identifier</key>
-           <string>com.azfy.SafetyTest</string>//
+           <string>com.azfy.SafetyTest</string>
            <key>bundle-version</key>
            <string>1.0.0</string>//版本号
            <key>kind</key>
