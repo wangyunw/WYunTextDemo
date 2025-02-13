@@ -1,0 +1,6 @@
+framework module Pods_WYunTextDemo {
+  umbrella header "Pods-WYunTextDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

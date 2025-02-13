@@ -1,0 +1,38 @@
+ 
+default_platform(:ios)
+
+platform :ios do
+
+  build_num = get_build_number() # 获取当前版本号
+  last_build_num = build_num.to_i + 1 #自增
+  last_build = last_build_num.to_s # 转成字符串
+
+  desc "Push a new beta build to TestFlight"
+  lane :beta_debug do
+    
+  
+      increment_build_number #Build Setting->Version配置好，自增
+     
+
+      gym(
+        clean:true,
+        scheme:"WYunTextDemo",
+        configuration:"Release",
+        export_method:"ad-hoc",
+	output_directory:"./fastlane/ipa",
+ 	 
+    )
+
+   #firim(
+    #  firim_api_token: "#{$firim_api_tokne}",# api_token
+     # app_short: "#{$firim_short}",# 短连接
+     # app_changelog: options[:update_log]# 更新说明
+    #)
+    
+    pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+    
+
+
+  end
+ 
+end
