@@ -24,13 +24,12 @@ platform :ios do
  	include_symbols:true,
     )
 
-   #firim(
-    #  firim_api_token: "#{$firim_api_tokne}",# api_token
-     # app_short: "#{$firim_short}",# 短连接
-     # app_changelog: options[:update_log]# 更新说明
-    #)
+   firim(
+      firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
+
+    )
     
-    pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
     
 
 
