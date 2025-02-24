@@ -10,11 +10,7 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta_debug do
     
-  
       increment_build_number #Build Setting->Version配置好，自增
-     
-     	
-
       gym(
         clean:true,
         scheme:"WYunTextDemo",
@@ -23,16 +19,51 @@ platform :ios do
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
     )
-
    firim(
       firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
 
-    )
-    
     #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
-    
-
 
   end
+
+
+    lane :debugOne do
+    
+      increment_build_number #Build Setting->Version配置好，自增
+      gym(
+        clean:true,
+        scheme:"WYunTextDemoOne",
+        configuration:"Release",
+        export_method:"ad-hoc",
+	output_directory:"./fastlane/ipa",
+ 	include_symbols:true,
+    )
+   firim(
+      firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
+
+    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+
+  end	
+
+
+    lane :debugTwo do
+    
+      increment_build_number #Build Setting->Version配置好，自增
+      gym(
+        clean:true,
+        scheme:"WYunTextDemoTwo",
+        configuration:"Release",
+        export_method:"ad-hoc",
+	output_directory:"./fastlane/ipa",
+ 	include_symbols:true,
+    )
+   firim(
+      firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
+
+    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+
+  end	
+
+
  
 end

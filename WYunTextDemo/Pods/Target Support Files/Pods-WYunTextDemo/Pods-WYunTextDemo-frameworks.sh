@@ -175,6 +175,12 @@ code_sign_if_enabled() {
   fi
 }
 
+if [[ "$CONFIGURATION" == "DEBUG100" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+fi
+if [[ "$CONFIGURATION" == "DEBUG200" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi
