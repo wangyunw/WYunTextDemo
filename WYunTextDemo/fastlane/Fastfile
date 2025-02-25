@@ -32,7 +32,7 @@ platform :ios do
       gym(
         clean:true,
         scheme:"WYunTextOne",
-        configuration:"Release",
+        configuration:"DEBUG100",
         export_method:"ad-hoc",
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
@@ -50,7 +50,7 @@ platform :ios do
       gym(
         clean:true,
         scheme:"WYunTextTwo",
-        configuration:"Release",
+        configuration:"DEBUG200",
         export_method:"ad-hoc",
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
