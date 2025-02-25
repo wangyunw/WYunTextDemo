@@ -19,10 +19,10 @@ platform :ios do
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
     )
-   firim(
+   #firim(
       firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
 
-    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+    pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
 
   end
 
@@ -38,10 +38,10 @@ platform :ios do
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
     )
-   firim(
+   #firim(
       firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
 
-    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+    pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
 
   end	
 
@@ -57,10 +57,10 @@ platform :ios do
 	output_directory:"./fastlane/ipa",
  	include_symbols:true,
     )
-   firim(
+   #firim(
       firim_api_token: "9d677e481f59d27aafd95bdcae9e9d34",
 
-    #pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
+    pgyer(api_key: "1997b33f7938aa126e8369bc7de8abcf")
 
   end	
 
